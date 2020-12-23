@@ -29,6 +29,10 @@ export const projects: Definition<"projects"> = {
       resolve(type: String, name: String): [NameRecord] # null means unknown type
     }
 
+    input ContractInstanceQuerySettings {
+      network
+    }
+
     input ProjectInput {
       directory: String!
     }
